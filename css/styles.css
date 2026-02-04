@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* default font for the site */
+}
+
+.site-body {
+    background-color: #eae0d5; /* body background */
+    margin: 10px;              /* space around the body */
+}
+
+.site-header {
+  background-color: #ded4c9;   /* header background */
+  border: #c6ac8f 5px solid; /* border colour and thickness */
+  border-radius: 6px;        /* rounded corners */
+  min-height: 80px;           /* ensure at least this tall, allow content to fit */
+  display: flex;
+  align-items: center;         /* vertical centering */
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;          /* keep logo, nav and utilities on one line */
+
+  position: sticky;          /* stick to top on scroll */
+  top: 0;                     /* position at the top */
+  z-index: 1000;             /* ensure it stays above other content */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+}
+.logo-container {
+  margin-left: 1%;          /* space from left edge */
+  margin-right: 0;         /* avoid forcing other items to wrap */
+}
+.site-nav{
+  margin-left: 4%;        /* let flexbox place the nav between logo and utilities */
+  margin-right: auto;
+  margin-top: 90px;
+  margin-bottom: auto;
+}
+.logo {
+  max-height: 150px;            /* constrain logo height to fit the header */
+  width: auto;
+  height: auto;
+}
+
+.nav-list {
+  list-style-type: none;      /* remove bullet points */
+  margin: 0;                  /* remove default margin */
+  padding: 0;                 /* remove default padding */
+  display: flex;              /* horizontal layout */
+  gap: 20px;                  /* space between items */
+  font-family: 'Arial', sans-serif; /* font family */
+}
+.header-nav-item {
+  text-decoration: none;    /* remove underline from links */
+  color: #5e503f;           /* link colour */
+  font-weight: bold;        /* make text bold */
+  font-size: 18px;          /* font size */
+
+}
+
+.header-nav-item:hover {
+  color: #776856;           /* hover colour */
+  text-decoration: underline;
+}
+
+.social-utility-bar{
+  margin-right: 8%;         /* space from right edge */
+  display: flex;            /* horizontal layout */
+  gap: 15px;                /* space between icons */
+  display: flex;              /* horizontal layout */
+
+  padding: 5px;             /* space inside the border */
+  padding-bottom: 1px;
+
+}
+.social-icon {
+    width: 60px;               /* Instagram logo size */
+    height: auto;
+}
+/* colours: licht #eae0d5 1-tint donkerder: #ded4c9 donker #c6ac8f bruin #5e503f  */
