@@ -1,6 +1,16 @@
-body {
-    font-family: Arial, Helvetica, sans-serif; /* default font for the site */
+html {
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif; /* default font (Work Sans Regular 400) */
+  font-weight: 400;
 }
+
+h1{
+  font-size: 45px; /* h1 font size */
+  color: #2c251d;           /* link colour */
+}
+p {
+  font-size: 28px;          /* paragraph font size */
+} 
+
 
 .site-body {
     background-color: #eae0d5; /* body background */
@@ -16,7 +26,6 @@ body {
   align-items: center;         /* vertical centering */
 
   display: flex;
-  align-items: center;
   flex-wrap: nowrap;          /* keep logo, nav and utilities on one line */
 
   position: sticky;          /* stick to top on scroll */
@@ -46,13 +55,12 @@ body {
   padding: 0;                 /* remove default padding */
   display: flex;              /* horizontal layout */
   gap: 20px;                  /* space between items */
-  font-family: 'Arial', sans-serif; /* font family */
 }
 .header-nav-item {
   text-decoration: none;    /* remove underline from links */
   color: #5e503f;           /* link colour */
   font-weight: bold;        /* make text bold */
-  font-size: 18px;          /* font size */
+  font-size: 28px;          /* font size */
 
 }
 
@@ -76,3 +84,30 @@ body {
     height: auto;
 }
 /* colours: licht #eae0d5 1-tint donkerder: #ded4c9 donker #c6ac8f bruin #5e503f  */
+
+.intro {
+    margin: 2.8% 5%;            /* space around */
+    display: grid;                   /* use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* two equal columns */
+    grid-gap: 20px;                 /* space between grid items */
+  }
+.content-box{
+  text-align: left;       /* align text to the left */
+}
+
+.image-outline {
+  width: 400px;
+  margin-top: 115px;
+  margin-left: 150px;
+  padding:10px;
+  border: #c6ac8f 5px solid; /* border colour and thickness */
+  border-radius: 6px;        /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+}
+
+.foto-fotograaf {
+  width:100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+  
