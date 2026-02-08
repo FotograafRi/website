@@ -9,7 +9,11 @@ h1{
 }
 p {
   font-size: 28px;          /* paragraph font size */
-} 
+}
+
+li {
+  font-size: 28px;          /* list item font size */
+}
 
 
 .site-body {
@@ -90,6 +94,8 @@ p {
     display: grid;                   /* use grid layout */
     grid-template-columns: repeat(2, 1fr); /* two equal columns */
     grid-gap: 20px;                 /* space between grid items */
+    padding-right: 20px;             /* space between line and edge */
+    height: 800px;
   }
 .content-box{
   text-align: left;       /* align text to the left */
@@ -110,4 +116,69 @@ p {
   border-radius: 6px;
   overflow: hidden;
 }
-  
+
+.vision-box {
+  border: #c6ac8f 5px solid; /* same border as image-outline */
+  border-radius: 6px;        /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+  padding: 30px;
+  background-color: #eae0d5; /* body background */
+  margin-top: 350px;        /* overlap with photo */
+  margin-left: 600px;
+  position: relative;
+  z-index: 10px;               /* place above the image */
+  width: 500px;
+  text-align: center
+}
+.vision-box h1 {
+  margin-top: -25px;    /* remove default top margin */
+}
+
+.divider-line.over-ri{
+  border: none;
+  border-top: 3px solid #c6ac8f;
+  margin: 30px 0;
+  opacity: 0.6;
+  width: 450px;
+}
+
+.efficentie-box{
+  border: #c6ac8f 5px solid; /* same border as image-outline */
+  border-radius: 6px;        /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+  padding: 30px;
+  background-color: #eae0d5; /* body background */
+  margin-top: -350px;        /* overlap with vision box */
+  margin-left: 1140px;    /* move more to the right to overlap */
+  position: relative;
+  z-index: 5;                /* place below vision-box */
+  width: 400px;
+  text-align: center;
+}
+.efficentie-box h1 {
+  margin-top: -25px;    /* remove default top margin */
+}
+
+.ideeen{
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 5%;
+  width: 90%;
+  max-width: 800px;
+}
+
+.divider-line.ideeen{
+  border: none;
+  border-top: 3px solid #c6ac8f;
+  opacity: 0.6;
+  width: 650px;
+}
+
+.ideeen-lijst{
+  list-style-type: none;      /* remove bullet points */
+  margin: 0;                  /* remove default margin */
+  padding: 0;                 /* remove default padding */
+  display: flex;              /* horizontal layout */
+  flex-direction: column;     /* stack items vertically */
+  gap: 15px;                  /* space between items */
+}
