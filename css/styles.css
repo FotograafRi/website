@@ -1,6 +1,27 @@
-body {
-    font-family: Arial, Helvetica, sans-serif; /* default font for the site */
+html {
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif; /* default font (Work Sans Regular 400) */
+  font-weight: 400;
 }
+
+h1{
+  font-size: 30px; /* h1 font size */
+  color: #2c251d;           /* link colour */
+}
+
+h3{
+  font-size: 24px;          /* h3 font size */
+  color: #2c251d;           /* link colour */
+}
+p {
+  font-size: 18px;          /* paragraph font size */
+  line-height: 1.6;
+}
+
+li {
+  font-size: 18px;          /* list item font size */
+  line-height: 1.6;
+}
+
 
 .site-body {
     background-color: #eae0d5; /* body background */
@@ -14,16 +35,19 @@ body {
   min-height: 80px;           /* ensure at least this tall, allow content to fit */
   display: flex;
   align-items: center;         /* vertical centering */
-
+  justify-content: space-between; /* space out logo, nav and utilities */
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;          /* keep logo, nav and utilities on one line */
+  padding: 10px 2%;
+  flex-wrap: wrap; /* Voor mobiel */
 
   position: sticky;          /* stick to top on scroll */
   top: 0;                     /* position at the top */
   z-index: 1000;             /* ensure it stays above other content */
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
 }
+
+
+
 .logo-container {
   margin-left: 1%;          /* space from left edge */
   margin-right: 0;         /* avoid forcing other items to wrap */
@@ -31,7 +55,7 @@ body {
 .site-nav{
   margin-left: 4%;        /* let flexbox place the nav between logo and utilities */
   margin-right: auto;
-  margin-top: 90px;
+  margin-top: auto;
   margin-bottom: auto;
 }
 .logo {
@@ -46,13 +70,12 @@ body {
   padding: 0;                 /* remove default padding */
   display: flex;              /* horizontal layout */
   gap: 20px;                  /* space between items */
-  font-family: 'Arial', sans-serif; /* font family */
 }
 .header-nav-item {
   text-decoration: none;    /* remove underline from links */
   color: #5e503f;           /* link colour */
   font-weight: bold;        /* make text bold */
-  font-size: 18px;          /* font size */
+  font-size: 22px;          /* font size */
 
 }
 
@@ -76,3 +99,201 @@ body {
     height: auto;
 }
 /* colours: licht #eae0d5 1-tint donkerder: #ded4c9 donker #c6ac8f bruin #5e503f  */
+
+/* .intro {
+    margin: 2.8% 5%;          
+    display: grid;                  
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;                 
+    padding-right: 20px;             
+    height: 800px;
+  } */
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    height: auto; /* Geen vaste 800px hoogte */
+    margin: 30px 2% 30px 8%; /* Boven, Rechts, Onder, Links */
+    max-width: 1400px;
+}
+
+/* Mobiele instellingen (voor schermen kleiner dan 900px) */
+@media (max-width: 900px) {
+    
+    .intro {
+        display: flex;             /* Flexbox werkt vaak makkelijker op mobiel */
+        flex-direction: column;    /* Alles onder elkaar */
+        height: auto !important;   /* De 800px van desktop moet weg! */
+        margin: 20px auto;
+        padding: 0 15px;
+        gap: 0;                    /* We regelen ruimte nu met marges */
+    }
+  }
+
+.content-box{
+  text-align: left;       /* align text to the left */
+}
+
+.over-ri-boxen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.image-outline {
+  width: 400px;
+  margin-top: 30px;
+  margin-left: 150px;
+  padding:10px;
+  border: #c6ac8f 5px solid; /* border colour and thickness */
+  border-radius: 6px;        /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+}
+
+.foto-fotograaf {
+  width:100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+ 
+.vision-box {
+  border: #c6ac8f 5px solid; /* same border as image-outline */
+  border-radius: 6px;        /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+  padding: 30px;
+  background-color: #eae0d5; /* body background */
+  margin-top: -150px;        /* overlap with photo */
+  margin-left: -200px;
+  position: relative;
+  z-index: 10px;               /* place above the image */
+  width: 500px;
+  text-align: center
+}
+.vision-box h1 {
+  margin-top: -25px;    /* remove default top margin */
+}
+
+.divider-line.over-ri{
+  border: none;
+  border-top: 3px solid #c6ac8f;
+  margin: 30px 0;
+  opacity: 0.6;
+  width: 450px;
+}
+
+.efficentie-box{
+  border: #c6ac8f 5px solid; /* same border as image-outline */
+  border-radius: 6px;        /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* subtle shadow for depth */
+  padding: 30px;
+  background-color: #eae0d5; /* body background */
+  width: 90%;
+  max-width: 500px;
+  margin: 20px 0; /* Op mobiel staan ze gewoon onder elkaar */
+  position: static;
+  z-index: 5;                /* place below vision-box */
+  text-align: center;
+  margin: 20px 0; /* Op mobiel staan ze gewoon onder elkaar */ 
+  margin-top: -200px; /* Trekt de box omhoog zodat hij de vision-box raakt/overlapt */
+  margin-left: 850px; /* Schuift hem naar rechts voor het overlap-effect */
+}
+
+
+
+
+.efficentie-box h1 {
+  margin-top: -25px;    /* remove default top margin */
+}
+
+.ideeen{
+  text-align: center;
+  margin: 50px auto;
+  padding: 0 5%;
+  width: 90%;
+  max-width: 800px;
+}
+
+.divider-line.ideeen{
+  border: none;
+  border-top: 3px solid #c6ac8f;
+  opacity: 0.6;
+  width: 650px;
+}
+
+.ideeen-lijst{
+  list-style-type: none;      /* remove bullet points */
+  margin: 0;                  /* remove default margin */
+  padding: 0;                 /* remove default padding */
+  display: flex;              /* horizontal layout */
+  flex-direction: column;     /* stack items vertically */
+  gap: 15px;                  /* space between items */
+}
+
+/* Dit zorgt dat de titel 'Werkwijze' in het midden staat */
+.werkwijze h1 {
+    text-align: center;
+    width: 100%; /* Voor de zekerheid, zodat hij de volle breedte pakt */
+}
+
+/* Styling voor de werkwijze intro */
+.werkwijze .intro-text {
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Zorgt dat de blokjes netjes onder elkaar (of naast elkaar op pc) komen */
+.werkwijze-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobiel: alles onder elkaar */
+    gap: 1rem; /* Ruimte tussen de blokjes */
+    text-align: left; /* Of center als je dat mooier vindt */
+    margin-bottom: 2rem;
+    margin: 40px 5%; /* ruimte rondom de grid */
+}
+
+/* Op grotere schermen (tablets/laptops) 2 blokken naast elkaar */
+@media (min-width: 768px) {
+    .werkwijze-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.werkwijze-item p {
+    margin-top: 0;
+    line-height: 1.6;
+}
+.divider-line.werkwijze {
+  border: none;
+  border-top: 3px solid #c6ac8f;
+  margin: 30px auto;      /* center */
+  opacity: 0.6;
+  width: 100%;          /* of een vaste max zoals 650px */
+  max-width: 1500px; 
+}
+
+/* document buttons under werkwijze */
+
+.doc-buttons{
+  display: flex;
+  gap: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0 40px; /* small gap from divider */
+}
+.btn{
+  z-index: 12;
+  display: inline-block;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #5e503f;
+  border-radius: 6px;
+  border: #c6ac8f 5px solid; /* same border as image-outline */
+  background-color: #ded4c9; /* same as sticky header */
+
+}
+.btn:hover{transform: translateY(-2px);}
+
