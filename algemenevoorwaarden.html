@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotograafRi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="site-body">
+    <sticky-header class="site-header">
+        <div class="logo-container">
+            <img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo">
+        </div>
+        
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li><a class="header-nav-item" href="index.html">Home</a></li>
+                <li><a class="header-nav-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="header-nav-item" href="diensten.html">Diensten</a></li>
+                <li><a class="header-nav-item" href="over-mij.html">Over mij</a></li>
+                <li><a class="header-nav-item" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-utility-bar">
+            <a href="https://www.instagram.com/fotograaf_ri?igsh=emtvbTVwN21ucmZu" target="_blank" rel="noopener noreferrer">
+                <img src="images/Instagram_logo_black_transparant.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="mailto:fotograafri@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/email-icon-square-png.png" alt="Email" class="social-icon">
+            </a>
+        </div>
+    </sticky-header>
+    
+    <div class="voorwaarde-body">
+        <div id="content1">
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+fetch('/content/algemeenevoorwaarden.md')
+  .then(res => res.text())
+  .then(md => {
+    document.getElementById('content1').innerHTML = marked.parse(md);
+  })
+  .catch(err => {
+    console.error('Failed to load markdown:', err);
+  });
+</script>
+</html>
