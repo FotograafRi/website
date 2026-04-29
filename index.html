@@ -21,11 +21,11 @@
         
         <nav class="site-nav">
             <ul class="nav-list">
-                <li><a class="header-nav-item" href="index.html">Home</a></li>
+                <li><a class="header-nav-item" href="diensten.html">Over Ri</a></li>
                 <li><a class="header-nav-item" href="portfolio.html">Portfolio</a></li>
-                <li><a class="header-nav-item" href="diensten.html">Diensten</a></li>
-                <li><a class="header-nav-item" href="over-mij.html">Over mij</a></li>
-                <li><a class="header-nav-item" href="contact.html">Contact</a></li>
+                <li><a class="header-nav-item" href="over-mij.html">Ideeën</a></li>
+                <li><a class="header-nav-item" href="contact.html">Werkwijze</a></li>
+                <li><a class="header-nav-item" href="contact.html">Tarieven</a></li>
             </ul>
         </nav>
         <div class="social-utility-bar">
@@ -91,6 +91,30 @@
         </div>
         </div>
     </div>
+
+<div class="portfolio" id="portfolio">
+    <div class="content-box">
+        <h1>Portfolio</h1>
+        <p class="intro-text">Een indruk van mijn recente werk en sfeerimpressies.</p>
+
+        <div class="portfolio-container">
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="portfolio-slider">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="foto1.jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="foto2.jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="foto3.jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="foto4.jpg" alt="Sfeer 4"></div>
+                    <div class="portfolio-item"><img src="foto5.jpg" alt="Sfeer 5"></div>
+                    <div class="portfolio-item"><img src="foto6.jpg" alt="Sfeer 6"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+</div>
+
+
     <div class="ideeen">
         <hr class="divider-line ideeen">
         <div class="ideeen">
@@ -157,10 +181,67 @@
         <hr class="divider-line werkwijze">
     </div>
 
+<div class="tarieven" id="tarieven">
+    <div class="content-box">
+        <h1>Tarieven</h1>
+        
+        <p class="intro-text">
+            Wat kost dat nou Ri?
+        </p>
+
+        <div class="werkwijze-grid"> <div class="werkwijze-item">
+                <h3>Sfeerimpressie Pakket</h3>
+                <p><strong>Prijs indicatie € 455,00</strong></p>
+                <p>De professionele basis voor je bedrijfs- of locatiepresentatie voor website en social media. Inclusief vooraf een kennismakingsgesprek om jouw wensen kenbaar te maken.</p>
+                <p>Maximaal 2 uur op locatie<br>
+                20 professioneel bewerkte sfeerbeelden<br>
+                Keuze via persoonlijke online galerij binnen 15 werkdagen<br>
+                Onbeperkt commercieel gebruik</p>
+            </div>
+
+            <div class="werkwijze-item">
+                <h3>Interactieve 360° Media</h3>
+                <p><strong>Vanaf € 135,00</strong></p>
+                <p>Een unieke beleving met de Insta360 X5 van uw locatie voor op de website.</p>
+                <p>Inbegrepen: Set van 2 interactieve 360-views<br>
+                   Extra beelden: € 75,00 per extra 360° foto<br>
+                   Clean-up: € 30,00 per beeld (handmatig wegwerken van storende elementen)</p>
+            </div>
+
+            <div class="werkwijze-item">
+                <h3>Reiskosten & Nabestellingen</h3>
+                <p>Extra foto's: € 15,00 per stuk<br>
+                   Reiskosten: € 0,25 per km (apart gefactureerd)<br>
+                   Extra tijd op locatie: € 22,50 per 15 minuten</p>
+                <p><em>Alle genoemde prijzen zijn ex. BTW.</em></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<hr class="divider-line werkwijze">
+
     <div class="doc-buttons">
             <a class="btn" href="algemene-voorwaarden.pdf" target="_blank" rel="noopener">Algemene Voorwaarden</a>
             <a class="btn" href="privacyverklaring.html" target="_blank" rel="noopener">Privacyverklaring</a>
     </div>
+
+<script>
+
+function moveSlide(direction) {
+    const slider = document.querySelector('.portfolio-slider');
+    // We scrollen op basis van de breedte van de slider
+    const scrollAmount = slider.clientWidth; 
+    
+    slider.scrollBy({
+        left: scrollAmount * direction,
+        behavior: 'smooth'
+    });
+}</script>
+
+
+
 
 </body>
 </html>
