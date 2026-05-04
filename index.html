@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FotograafRi</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1025px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 1024px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
@@ -95,18 +96,24 @@
 <div class="portfolio" id="portfolio">
     <div class="content-box">
         <h1>Portfolio</h1>
-        <p class="intro-text">Een indruk van mijn recente werk en sfeerimpressies.</p>
+        <p class="intro-text">Een indruk van mijn recente werk en sfeerimpressie bij carrosseriebouwer en schadehersteller in Amsterdam</p>
 
         <div class="portfolio-container">
             <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
             <div class="portfolio-slider">
                 <div class="portfolio-track">
-                    <div class="portfolio-item"><img src="foto1.jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="foto2.jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="foto3.jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="foto4.jpg" alt="Sfeer 4"></div>
-                    <div class="portfolio-item"><img src="foto5.jpg" alt="Sfeer 5"></div>
-                    <div class="portfolio-item"><img src="foto6.jpg" alt="Sfeer 6"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (1 van 12).jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (2 van 12).jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (3 van 12).jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (4 van 12).jpg" alt="Sfeer 4"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (5 van 12).jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (6 van 12).jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (7 van 12).jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (8 van 12).jpg" alt="Sfeer 4"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (9 van 12).jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (10 van 12).jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (11 van 12).jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (12 van 12).jpg" alt="Sfeer 4"></div>
                 </div>
             </div>
             <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
@@ -213,32 +220,32 @@
                 <p>Extra foto's: € 15,00 per stuk<br>
                    Reiskosten: € 0,25 per km (apart gefactureerd)<br>
                    Extra tijd op locatie: € 22,50 per 15 minuten</p>
-                <p><em>Alle genoemde prijzen zijn ex. BTW.</em></p>
             </div>
 
         </div>
+        <p class="tarieven-note-bottom">Alle genoemde prijzen zijn ex. BTW.</p>
     </div>
 </div>
 
 <hr class="divider-line werkwijze">
 
     <div class="doc-buttons">
-            <a class="btn" href="algemenevoorwaarden.html">algemenevoorwaarden</a>
-            <a class="btn" href="privacyverklaring.html" >Privacyverklaring</a>
+            <a class="btn" href="algemenevoorwaarden.html">Algemene voorwaarden</a>
+            <a class="btn" href="privacyverklaring.html" >Privacy verklaring</a>
     </div>
 
 <script>
 
-function moveSlide(direction) {
-    const slider = document.querySelector('.portfolio-slider');
-    // We scrollen op basis van de breedte van de slider
-    const scrollAmount = slider.clientWidth; 
-    
+function moveSlide(direction, sliderSelector = '.portfolio-slider') {
+    const slider = document.querySelector(sliderSelector);
+    if (!slider) return;
+    const scrollAmount = slider.clientWidth;
     slider.scrollBy({
         left: scrollAmount * direction,
         behavior: 'smooth'
     });
-}</script>
+}
+</script>
 
 
 
