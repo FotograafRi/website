@@ -39,5 +39,23 @@
         </div>
     </sticky-header>
     
+    <div class="privacy-body">
+        <div id="content1">
+        </div>
+    </div>
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+fetch('/content/privacyverklaring.md')
+  .then(res => res.text())
+  .then(md => {
+    document.getElementById('content1').innerHTML = marked.parse(md);
+  })
+  .catch(err => {
+    console.error('Failed to load markdown:', err);
+  });
+</script>
 </html>
