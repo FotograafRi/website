@@ -4,9 +4,8 @@
 
 Welkom bij FotograafRi. Uw privacy is belangrijk voor mij.
 
-Ik, **FotograafRi** (KVK-nummer `98634011`, gevestigd op `A.M. de Jonglaan 29a`), ben verantwoordelijk voor de verwerking van uw persoonsgegevens. Dit doe ik altijd zorgvuldig en volgens de Europese privacywetgeving (AVG).
+Ik, **FotograafRi** (KVK-nummer `98634011`), ben verantwoordelijk voor de verwerking van uw persoonsgegevens. Dit doe ik altijd zorgvuldig en volgens de Europese privacywetgeving (AVG).
 
----
 
 ## 1. Welke Gegevens Verzamel Ik?
 
@@ -18,7 +17,6 @@ Ik verwerk uw gegevens om mijn afspraken na te komen en mijn diensten te leveren
 * **Bestelinformatie (Webshop):** Uw adres en bestelstatus voor het verzenden van prints of albums.
 * **Websitegebruik:** Gegevens over hoe u mijn website gebruikt (IP-adres, bezochte pagina's en klikgedrag). Dit helpt mij de website te verbeteren.
 
----
 
 ## 2. Waarom Gebruik Ik Uw Gegevens?
 
@@ -42,8 +40,6 @@ Het tonen van mijn werk in mijn portfolio (op mijn website of social media) is g
 
 Ik kan uw gegevens gebruiken om mijn service te verbeteren. Dit betekent dat ik u na afloop van de opdracht kan vragen naar uw tevredenheid of u kan informeren over relevante updates. Ik weeg hierbij altijd uw privacybelangen af tegen mijn bedrijfsbelang.
 
----
-
 ## 3. Hoe Lang Bewaar Ik Uw Gegevens?
 
 Ik bewaar uw gegevens niet langer dan strikt noodzakelijk:
@@ -52,7 +48,6 @@ Ik bewaar uw gegevens niet langer dan strikt noodzakelijk:
 * **Administratie:** Financiële documenten en facturen bewaar ik verplicht 7 jaar.
 * **Marketing:** Contactgegevens voor promotiedoeleinden bewaar ik zolang u de toestemming niet intrekt.
 
----
 
 ## 4. Deel Ik Uw Gegevens met Derden?
 
@@ -67,7 +62,6 @@ Met bedrijven die gegevens voor mij verwerken (mijn leveranciers), sluit ik alti
 
 > **Let op (Buitenland):** Als ik gebruikmaak van IT-diensten buiten Europa, zorg ik via EU-Model Contractbepalingen voor een adequaat beschermingsniveau.
 
----
 
 ## 5. Deelopdrachten en Verantwoordelijkheid Opdrachtgever
 
@@ -79,7 +73,6 @@ Bij het fotograferen van bedrijven (met werknemers, modellen of gasten in beeld)
   * De benodigde, schriftelijke toestemmingen (*quitclaims* of *model releases*) heeft verkregen en bewaart voor het gebruik van de foto's in hun promotie.
   * Mij vrijwaart van claims als blijkt dat de toestemmingen ontbraken.
 
----
 
 ## 6. Uw Privacyrechten
 
@@ -99,7 +92,6 @@ Stuur uw verzoek naar <fotograafri@gmail.com>. Ik reageer binnen vier weken. Om 
 
 Bent u het niet eens met hoe ik omga met uw gegevens? Dan kunt u een klacht indienen bij de Nederlandse toezichthouder: de **Autoriteit Persoonsgegevens (AP)** via hun website.
 
----
 
 ## 7. Cookiebeleid
 
@@ -110,7 +102,6 @@ Mijn website maakt gebruik van cookies (kleine tekstbestandjes) en trackingtechn
 
 U kunt uw voorkeuren altijd aanpassen via de instellingen van uw internetbrowser.
 
----
 
 ## 8. Contact
 
@@ -121,3 +112,4 @@ Heeft u vragen of opmerkingen over deze privacyverklaring? U kunt contact opneme
 | **Onderneming:** | FotograafRi |
 | **Adres:** | A.M. de Jonglaan 29a, 1422GJ UITHOORN |
 | **E-mailadres:** | <fotograafri@gmail.com> |
+| **KVK-nummer** | `98634011` |
