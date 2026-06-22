@@ -1,6 +1,20 @@
 html {
   font-family: 'Work Sans', Arial, Helvetica, sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Adjust this value if the fixed mobile header still covers or overshoots section headings */
+  --header-anchor-offset: 77px;
+}
+
+#over-ri,
+#ideeën,
+#portfolio,
+#werkwijze,
+#tarieven {
+  scroll-margin-top: var(--header-anchor-offset);
 }
 
 h1 {
