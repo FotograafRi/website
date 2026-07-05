@@ -37,37 +37,88 @@ p, li {
 .site-body {
   background-color: #eae0d5;
   margin: 10px;
-  padding-top: 70px;
+  padding-top: 0;
 }
 
 .site-header {
   background-color: #ded4c9;
   border: #c6ac8f 3px solid;
   border-radius: 6px;
-  min-height: 55px;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 2%;
+  padding: 10px 12px;
+  gap: 10px;
   flex-wrap: wrap;
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  right: 10px;
+  position: sticky;
+  top: 0;
   z-index: 10000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .logo-container {
-  margin-left: 1%;
+  margin-left: 0;
   margin-right: 0;
+  flex: 1 1 auto;
+}
+
+.mobile-menu-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #c6ac8f;
+  border-radius: 6px;
+  background-color: #eae0d5;
+  cursor: pointer;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.mobile-menu-icon,
+.mobile-menu-icon::before,
+.mobile-menu-icon::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #5e503f;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-icon {
+  position: relative;
+}
+
+.mobile-menu-icon::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.mobile-menu-icon::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.mobile-menu-toggle:hover {
+  background-color: #efe4d7;
 }
 
 .site-nav {
-  margin-left: 2%;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  display: none;
+  width: 100%;
+  margin: 0;
+  order: 4;
+}
+
+.site-nav.is-open {
+  display: block;
 }
 
 .logo {
@@ -79,9 +130,13 @@ p, li {
 .nav-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #eae0d5;
+  border: 2px solid #c6ac8f;
+  border-radius: 6px;
 }
 
 .header-nav-item {
@@ -89,9 +144,11 @@ p, li {
   color: #5e503f;
   font-weight: bold;
   font-family: 'Work Sans';
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  display: block;
+  padding: 4px 0;
 }
 
 .header-nav-item:hover {
@@ -100,7 +157,7 @@ p, li {
 }
 
 .social-utility-bar {
-  margin-right: 2%;
+  margin-right: 0;
   display: flex;
   gap: 8px;
   padding: 2px;
@@ -134,21 +191,54 @@ p, li {
 }
 
 .over-ri-boxen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: none;
+}
+
+.about-carousel-wrapper {
+  margin-top: 20px;
+}
+
+.about-carousel-container {
+  max-width: 100%;
   position: relative;
-  padding-bottom: 40px;
   width: 100%;
-  max-width: 520px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-carousel-slider {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.about-carousel-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.about-carousel-track {
+  display: flex;
+  gap: 20px;
+}
+
+.about-carousel-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
 }
 
 .vision-box,
 .efficentie-box {
   width: 100%;
-  max-width: 520px;
-  margin: 20px auto;
+  height: 100%;
+  max-width: 100%;
+  margin: 0;
   box-sizing: border-box;
   border: #c6ac8f 5px solid;
   border-radius: 6px;
@@ -156,6 +246,9 @@ p, li {
   padding: 24px;
   background-color: #eae0d5;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .vision-box h1,
@@ -165,8 +258,12 @@ p, li {
 
 .image-outline {
   width: 100%;
-  max-width: 520px;
-  margin: 20px auto;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   padding: 10px;
   border: #c6ac8f 5px solid;
   border-radius: 6px;
@@ -176,9 +273,21 @@ p, li {
 
 .foto-fotograaf {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 6px;
   overflow: hidden;
+  display: block;
 }
+
+.about-carousel-container .nav-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.about-carousel-container .nav-btn.prev { left: 6px; }
+.about-carousel-container .nav-btn.next { right: 6px; }
 
 .divider-line.over-ri {
   border: none;
