@@ -19,16 +19,11 @@
         <div class="logo-container">
             <a href="#top"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
         </div>
-        
-        <nav class="site-nav">
-            <ul class="nav-list">
-                <li><a class="header-nav-item" href="#over-ri">Over Ri</a></li>
-                <li><a class="header-nav-item" href="#portfolio">Portfolio</a></li>
-                <li><a class="header-nav-item" href="#ideeën">Ideeën</a></li>
-                <li><a class="header-nav-item" href="#werkwijze">Werkwijze</a></li>
-                <li><a class="header-nav-item" href="#tarieven">Tarieven</a></li>
-            </ul>
-        </nav>
+
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-nav" aria-label="Open menu">
+            <span class="mobile-menu-icon"></span>
+        </button>
+
         <div class="social-utility-bar">
             <a href="https://www.instagram.com/fotograaf_ri?igsh=emtvbTVwN21ucmZu" target="_blank" rel="noopener noreferrer">
                 <img src="images/Instagram_logo_black_transparant.png" alt="Instagram" class="social-icon">
@@ -37,6 +32,16 @@
                 <img src="images/email-icon-square-png.png" alt="Email" class="social-icon">
             </a>
         </div>
+
+        <nav class="site-nav" id="mobile-site-nav">
+            <ul class="nav-list">
+                <li><a class="header-nav-item" href="#over-ri">Over Ri</a></li>
+                <li><a class="header-nav-item" href="#portfolio">Portfolio</a></li>
+                <li><a class="header-nav-item" href="#ideeën">Ideeën</a></li>
+                <li><a class="header-nav-item" href="#werkwijze">Werkwijze</a></li>
+                <li><a class="header-nav-item" href="#tarieven">Tarieven</a></li>
+            </ul>
+        </nav>
     </sticky-header>
 
     <div class="intro-container">
@@ -51,7 +56,7 @@
                 <!-- eventueel ruimte voor insta fotos -->
             </div>
 
-            <div class="content-box" >
+            <div class="content-box about-story-text">
                 <h1 id="over-ri">Over Ri</h1>
                 <p> Achter de lens staat Rianne! En ik ben heel blij dat ik je mag verwelkomen op mijn site als enthousiaste ondernemer. De motor die hier draait is het continue willen leren om mijn visuele creatieve blik te verbreden; zelfstudie in de 3D wereld (Blender) heeft zich laten groeien richting de fotografie. <br><br>
                     De weg hier naartoe was even zoeken, omdat mijn loopbaan een onverwachte wending maakte door mijn gezondheid. Ik ruilde mijn werk als laboratoriumanaliste – waar mijn oog voor detail van pas kwam – in voor het maken van digitale beelden. <br><br>
@@ -59,37 +64,40 @@
                 <hr class="divider-line over-ri">
             </div>
 
-            <div class="content-box">
-                <div class="image-outline">
-                    <img class="foto-fotograaf" src="images/Zelfportret Rianne-3.jpg" alt="FotograafRi Rianne met camera">
+            <div class="content-box about-carousel-wrapper">
+                <div class="about-carousel-container">
+                    <button class="nav-btn prev" type="button" onclick="moveSlide(-1, '.about-carousel-slider')">&#10094;</button>
+                    <div class="about-carousel-slider">
+                        <div class="about-carousel-track">
+                            <div class="about-carousel-slide">
+                                <div class="image-outline">
+                                    <img class="foto-fotograaf" src="images/Zelfportret Rianne-3.jpg" alt="FotograafRi Rianne met camera">
+                                </div>
+                            </div>
+                            <div class="about-carousel-slide">
+                                <div class="vision-box">
+                                    <h1>Visie</h1>
+                                    <p>Ik ben ervan overtuigd dat elk bedrijf een uniek, menselijk verhaal heeft. Ik ga vol enthousiasme en interesse te werk om dit vast te leggen.
+                                    <br><br>Sterke Portretten:<br>
+                                    Om de persoonlijkheid en professionaliteit van het team vast te leggen.
+                                    <br><br>Sfeer en Proces:<br>
+                                    Om de unieke dynamiek en de ziel van jouw bedrijf visueel te maken.</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel-slide">
+                                <div class="efficentie-box">
+                                    <h1>Efficiëntie</h1>
+                                    <p>Efficiëntie is mijn kracht.<br>
+                                    Vanwege mijn bewuste keuze voor een gebalanceerd werkritme, werk ik uitsluitend met korte, maar intensieve fotosessies.
+                                    <br><br>Dit is mijn kracht:<br>
+                                    Maximale focus: je profiteert van mijn onverdeelde aandacht. We werken samen doelgericht en efficiënt.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav-btn next" type="button" onclick="moveSlide(1, '.about-carousel-slider')">&#10095;</button>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="over-ri-boxen">
-        <div class="vision-box">
-            <h1>Visie</h1>
-            <p>Ik ben ervan overtuigd dat elk bedrijf een uniek, menselijk verhaal heeft. Ik ga vol enthousiasme en interesse te werk om dit vast te leggen.
-            <Br> 
-            <Br>Sterke Portretten:<Br>
-            Om de persoonlijkheid en professionaliteit van het team vast te leggen.
-            <Br>
-            <Br>Sfeer en Proces:<Br>
-            Om de unieke dynamiek en de ziel van jouw bedrijf visueel te maken.
-            <Br> 
-        </div>
-
-        <div class="content-box">
-            <div class="efficentie-box">
-                <h1>Efficiëntie</h1>
-                <p> <Br>Efficiëntie is mijn kracht
-                <Br>Vanwege mijn bewuste keuze voor een gebalanceerd werkritme, werk ik uitsluitend met korte, maar intensieve fotosessies.
-                <Br>
-                <Br> Dit is mijn kracht:
-                <Br>Maximale focus: Je profiteert van mijn onverdeelde aandacht. We werken samen doelgericht en efficiënt</p>
-            </div>
-        </div>
         </div>
     </div>
 
@@ -243,6 +251,25 @@
     <p>&copy; 2026 FotograafRi. Alle rechten voorbehouden. 
   </div>
 </footer>
+
+<script>
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileSiteNav = document.querySelector('.site-nav');
+
+  if (mobileMenuToggle && mobileSiteNav) {
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = mobileSiteNav.classList.toggle('is-open');
+      mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.querySelectorAll('.header-nav-item').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileSiteNav.classList.remove('is-open');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
 
 
 
