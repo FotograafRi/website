@@ -38,7 +38,7 @@
     </sticky-header>
     
     <div class="voorwaarde-body">
-        <div id="content1">
+        <div id="content2">
         </div>
     </div>
     
@@ -46,10 +46,10 @@
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 <script>
-fetch('/content/algemeenevoorwaarden.md')
+fetch('/content/algemenevoorwaarden.md')
   .then(res => res.text())
   .then(md => {
-    document.getElementById('content1').innerHTML = marked.parse(md);
+    document.getElementById('content2').innerHTML = marked.parse(md);
   })
   .catch(err => {
     console.error('Failed to load markdown:', err);

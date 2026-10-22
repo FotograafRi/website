@@ -107,7 +107,7 @@ U kunt uw voorkeuren altijd aanpassen via de instellingen van uw internetbrowser
 
 Heeft u vragen of opmerkingen over deze privacyverklaring? U kunt contact opnemen via:
 
-| Gegeven | Detail |
+| Gegevens | Detail |
 | :--- | :--- |
 | **Onderneming:** | FotograafRi |
 | **Adres:** | A.M. de Jonglaan 29a, 1422GJ UITHOORN |

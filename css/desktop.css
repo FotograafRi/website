@@ -5,7 +5,7 @@ html {
 }
 
 :root {
-  /* Adjust this value if the sticky header still covers or overshoots section headings */
+
   --header-anchor-offset: 180px;
 }
 
@@ -25,11 +25,31 @@ h1 {
 h3 {
   font-size: 24px;
   color: #2c251d;
+  text-align: center;
 }
 
-p, li {
+.leftalign {
+  text-align: left;
+}
+
+#content1 h3 {
+  text-align: center;
+}
+
+#content2 p, h3 {
+  text-align: left;
+}
+
+li {
   font-size: 18px;
   line-height: 1.6;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
 }
 
 .site-body {
@@ -438,6 +458,36 @@ p, li {
   margin-top: 1rem;
   margin-bottom: 0;
 }
+
+/* .tarieven-table {
+    border-collapse: collapse;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tarieven-table th,
+.tarieven-table td {
+    border: 1px solid #c6ac8f;
+    padding: 50px;
+    text-align: left;
+} */
+
+table {
+  border-collapse: collapse;
+  margin: 1.5rem auto;      
+}
+th, td {
+  border: 2px solid #c6ac8f;
+  padding: 0.5rem 0.75rem;
+}
+th {
+  background: #c6ac8f;
+}
+
+
+
+
 
 .site-footer {
   background-color: #c6ac8f;

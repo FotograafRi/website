@@ -39,7 +39,7 @@
     </sticky-header>
 
     <div class="privacy-body">
-        <div id="content1">
+        <div id="content2">
         </div>
     </div>
 
@@ -51,7 +51,7 @@
 fetch('/content/privacyverklaring.md')
   .then(res => res.text())
   .then(md => {
-    document.getElementById('content1').innerHTML = marked.parse(md);
+    document.getElementById('content2').innerHTML = marked.parse(md);
   })
   .catch(err => {
     console.error('Failed to load markdown:', err);
