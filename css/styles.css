@@ -414,7 +414,7 @@ li {
     display: grid;
     grid-template-columns: 1fr; /* Mobiel: alles onder elkaar */
     gap: 1rem; /* Ruimte tussen de blokjes */
-    text-align: left; /* Of center als je dat mooier vindt */
+    text-align: left; 
     margin-bottom: 2rem;
     margin: 40px 5%; /* ruimte rondom de grid */
 }
@@ -439,7 +439,7 @@ li {
   max-width: 1500px; 
 }
 
-/* Tarieven styling - exact zelfde opzet als werkwijze */
+/* Tarieven styling */
 .tarieven h1 {
     text-align: center;
     width: 100%;
@@ -451,7 +451,7 @@ li {
     text-align: center;
 }
 
-/* De grid voor de tarieven (kopieert jouw werkwijze-grid gedrag) */
+/* De grid voor de tarieven  */
 .tarieven .werkwijze-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -468,7 +468,7 @@ li {
 
 /* Zorgt dat de titels en teksten binnen de items goed staan */
 .tarieven .werkwijze-item h3 {
-    color: #c6ac8f; /* De kleur van je divider voor eenheid */
+    color: #c6ac8f; 
     margin-bottom: 0.5rem;
 }
 
@@ -501,8 +501,38 @@ li {
     }
 }
 
+.tarieven-table {
+    border-collapse: collapse;
+    width: 100%;
+}
 
-/* document buttons under werkwijze */
+.tarieven-table th,
+.tarieven-table td {
+    border: 1px solid #c6ac8f;
+    padding: 10px;
+    text-align: left;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 1.5rem auto;      /* centreert de tabel zelf */
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.75rem;
+}
+th {
+  background: #f3f3f3;
+}
+
+/* Content centreren */
+main, article, .content {   
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 
 .doc-buttons{
   display: flex;

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotograafRi</title>
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 1025px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 1024px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="site-body" id="top">
+    <sticky-header class="site-header">
+        <div class="logo-container">
+            <a href="#top"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
+        </div>
+
+        <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-nav" aria-label="Open menu">
+            <span class="mobile-menu-icon"></span>
+        </button>
+
+        <div class="social-utility-bar">
+            <a href="https://www.instagram.com/fotograaf_ri?igsh=emtvbTVwN21ucmZu" target="_blank" rel="noopener noreferrer">
+                <img src="images/Instagram_logo_black_transparant.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="mailto:fotograafri@gmail.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/email-icon-square-png.png" alt="Email" class="social-icon">
+            </a>
+        </div>
+
+        <nav class="site-nav" id="mobile-site-nav">
+            <ul class="nav-list">
+                <li><a class="header-nav-item" href="#over-ri">Over Ri</a></li>
+                <li><a class="header-nav-item" href="#portfolio">Portfolio</a></li>
+                <li><a class="header-nav-item" href="#ideeën">Ideeën</a></li>
+                <li><a class="header-nav-item" href="#werkwijze">Werkwijze</a></li>
+                <li><a class="header-nav-item" href="#tarieven">Tarieven</a></li>
+            </ul>
+        </nav>
+    </sticky-header>
+
+
+    
+<footer class="site-footer">
+  <div class="footer-container">
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 FotograafRi. Alle rechten voorbehouden. 
+  </div>
+</footer>
+
+<script>
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileSiteNav = document.querySelector('.site-nav');
+
+  if (mobileMenuToggle && mobileSiteNav) {
+    mobileMenuToggle.addEventListener('click', () => {
+      const isOpen = mobileSiteNav.classList.toggle('is-open');
+      mobileMenuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.querySelectorAll('.header-nav-item').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobileSiteNav.classList.remove('is-open');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+</script>
+
+
+
+
+<script>
+
+function moveSlide(direction, sliderSelector = '.portfolio-slider') {
+    const slider = document.querySelector(sliderSelector);
+    if (!slider) return;
+    const scrollAmount = slider.clientWidth;
+    slider.scrollBy({
+        left: scrollAmount * direction,
+        behavior: 'smooth'
+    });
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"> // script voor markdown content inladen. </script>
+
+<script>
+    // script voor markdown content inladen.
+fetch('/content/Tarievenzakelijkenparticulier2026.md')
+  .then(res => res.text())
+  .then(md => {
+    document.getElementById('content1').innerHTML = marked.parse(md);
+  })
+  .catch(err => {
+    console.error('Failed to load markdown:', err);
+  });
+</script>
+
+
+
+
+</body>
+</html>
