@@ -18,7 +18,7 @@
 <body class="site-body" id="top">
     <sticky-header class="site-header">
         <div class="logo-container">
-            <a href="#top"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
+            <a href="index.html"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
         </div>
 
         <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-nav" aria-label="Open menu">
@@ -106,28 +106,17 @@
 
 <div class="portfolio">
     <div class="content-box">
-        <h1 id="portfolio">Portfolio</h1>
-        <p class="intro-text">Een indruk van mijn recente werk en sfeerimpressie bij carrosseriebouwer en schadehersteller in Amsterdam</p>
+        <h1 id="portfolio"><a href="Portfolio.html">Portfolio</a></h1>
+        <h2 class="portfolio-slider-title" id="featured-portfolio-title">Productfotografie</h2>
+        <p class="intro-text">Een selectie uit mijn productfotografie.</p>
 
         <div class="portfolio-container">
-            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="portfolio-slider">
-                <div class="portfolio-track">
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (1 van 12).jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (2 van 12).jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (3 van 12).jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (4 van 12).jpg" alt="Sfeer 4"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (5 van 12).jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (6 van 12).jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (7 van 12).jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (8 van 12).jpg" alt="Sfeer 4"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (9 van 12).jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (10 van 12).jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (11 van 12).jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (12 van 12).jpg" alt="Sfeer 4"></div>
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#homepage-featured-slider')">&#10094;</button>
+            <div class="portfolio-slider" id="homepage-featured-slider">
+                <div class="portfolio-track" id="homepage-featured-track">
                 </div>
             </div>
-            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="nav-btn next" onclick="moveSlide(1, '#homepage-featured-slider')">&#10095;</button>
         </div>
     </div>
 </div>
@@ -163,39 +152,40 @@
         </p>
 
     <div class="werkwijze-grid">
-            
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Fotografie op Locatie</h3>
-                <p class="leftalign">De fotoshoot vindt plaats op jouw gewenste locatie. Indien nodig neem ik een mini-studio-opstelling mee, bijvoorbeeld voor professionele portretten.</p>
+
+         <div class="werkwijze-item">
+                <h3 class="leftalign">Voorbereiding</h3>
+                <p class="leftalign">Voorafgaand aan de fotoshoot stemmen we de wensen af, zodat we op locatie direct gericht aan de slag kunnen. Zakelijke klanten ontvangen vooraf (indien gewenst) een digitaal toestemmingsformulier (model release) voor medewerkers.</p>
             </div>
 
            <div class="werkwijze-item">
-                <h3 class="leftalign">Voorbereiding en overleg</h3>
-                <p class="leftalign">We nemen vooraf de planning door. Tijdens de fotoshoot op locatie overleggen we kort wat jouw specifieke favorieten of wensen zijn. Zo weet ik precies welke beelden voor jou onmisbaar zijn.</p>
+                <h3 class="leftalign">Fotografie op locatie</h3>
+                <p class="leftalign">De fotoshoot vindt plaats op jouw gewenste locatie. Voor (studio)portretten neem ik een mobiele mini-studio-opstelling mee. Sessieduur maximaal 2 uur per dag.</p>
             </div>
 
             <div class="werkwijze-item">
-                <h3 class="leftalign">Toestemming</h3>
-                <p class="leftalign">Vooraf ontvang je, indien gewenst, een toestemmingsformulier (model release) per e-mail. Dit is belangrijk wanneer we foto's van jouw medewerkers gaan publiceren. </p>
+                <h3 class="leftalign">Selectie </h3>
+                <p class="leftalign">Tijdens de fotoshoot, waar mogelijk, kijken we tussendoor op het scherm. Zo weten we zeker dat we de juiste richting te pakken hebben.<br><br>
+                                    Na de fotoshoot hoef je verder niets te doen. Ik zoek achteraf de scherpste, mooiste en meest complete serie voor je uit.
+                                    </p>
             </div>
 
             <div class="werkwijze-item">
-                <h3 class="leftalign">Duur van de Sessie</h3>
-                <p class="leftalign">De maximale duur van een fotosessie is twee uur per dag.</p>
+                <h3 class="leftalign">Drie Typen Bewerkingen</h3>
+                <p class="leftalign">
+                Sfeer-/reportagefoto’s: Spontane event- of bedrijfssfeer, bewerkt op kleur & licht. <br><br>
+                Actie- & Impressiefoto's: Gericht opgebouwde beelden (voor huisdieren, airsoft, voertuigen of beeldbank bedrijf), zorgvuldig individueel bewerkt op kleur & licht. <br><br>
+                Studio Portretten: Uitgelichte portretten inclusief gedetailleerde Photoshop-retouche (huid, licht en verfijning). 
+</p>
             </div>
 
             <div class="werkwijze-item">
-                <h3 class="leftalign">Aanlevering en selectie</h3>
-                <p class="leftalign">Je hoeft na de fotoshoot niet te spitten door honderden foto's. Bij een reportage maak ik zorgvuldig de beste selectie voor je, die ik volledig bewerkt aanlever. Doe je een branding- of portretshoot? Dan nemen we tijdens het fotograferen op locatie even de tijd om je een paar sneakpreviews te laten zien. Zo weten we zeker dat jouw favorieten er sowieso tussen zitten.</p>
-            </div>
-
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Levertijd</h3>
-                <p class="leftalign">Er wordt naar gestreefd de beelden binnen twee weken aan te leveren. De exacte levertijd wordt altijd nogmaals bevestigd op de offerte.</p>
+                <h3 class="leftalign">Aanlevering</h3>
+                <p class="leftalign">Binnen twee weken ontvang je de foto’s in hoge resolutie, helemaal klaar voor gebruik op je website, socials of voor aan de muur. De exacte levertijd wordt altijd nogmaals bevestigd op de offerte.</p>
             </div>
 
         </div>
-        
+     
         <hr class="divider-line werkwijze">
     </div>
 
@@ -226,9 +216,16 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 FotograafRi. Alle rechten voorbehouden. 
+        <p>&copy; 2026 Alle rechten voorbehouden • www.fotograafri.nl • KvK: 98634011 • BTW: NL005344317B28</p>
   </div>
 </footer>
+
+<dialog class="photo-lightbox" id="photo-lightbox" aria-label="Foto op volledige grootte">
+  <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="Vorige foto">&#10094;</button>
+  <button class="photo-lightbox-close" type="button" aria-label="Foto sluiten">&times;</button>
+  <img class="photo-lightbox-image" alt="">
+  <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="Volgende foto">&#10095;</button>
+</dialog>
 
 <script>
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -249,6 +246,54 @@
   }
 </script>
 
+<script>
+  const photoLightbox = document.getElementById('photo-lightbox');
+  const photoLightboxImage = photoLightbox.querySelector('.photo-lightbox-image');
+  const photoLightboxClose = photoLightbox.querySelector('.photo-lightbox-close');
+  const photoLightboxPrevious = photoLightbox.querySelector('.photo-lightbox-prev');
+  const photoLightboxNext = photoLightbox.querySelector('.photo-lightbox-next');
+  let lightboxImages = [];
+  let lightboxIndex = 0;
+
+    document.addEventListener('dblclick', (event) => {
+        const image = event.target.closest('.portfolio-item img');
+        if (!image) return;
+
+        const slider = image.closest('.portfolio-slider');
+        lightboxImages = Array.from(slider.querySelectorAll('.portfolio-item img'));
+        lightboxIndex = lightboxImages.indexOf(image);
+        showLightboxImage();
+        photoLightbox.showModal();
+  });
+
+  function showLightboxImage() {
+    const image = lightboxImages[lightboxIndex];
+    photoLightboxImage.src = image.currentSrc || image.src;
+    photoLightboxImage.alt = image.alt;
+    const hasMultipleImages = lightboxImages.length > 1;
+    photoLightboxPrevious.hidden = !hasMultipleImages;
+    photoLightboxNext.hidden = !hasMultipleImages;
+  }
+
+  function moveLightboxImage(direction) {
+    if (lightboxImages.length < 2) return;
+    lightboxIndex = (lightboxIndex + direction + lightboxImages.length) % lightboxImages.length;
+    showLightboxImage();
+  }
+
+  photoLightboxPrevious.addEventListener('click', () => moveLightboxImage(-1));
+  photoLightboxNext.addEventListener('click', () => moveLightboxImage(1));
+  photoLightboxClose.addEventListener('click', () => photoLightbox.close());
+  photoLightbox.addEventListener('click', (event) => {
+    if (event.target === photoLightbox) photoLightbox.close();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (!photoLightbox.open) return;
+    if (event.key === 'Escape') photoLightbox.close();
+    if (event.key === 'ArrowLeft') moveLightboxImage(-1);
+    if (event.key === 'ArrowRight') moveLightboxImage(1);
+  });
+</script>
 
 
 
@@ -263,31 +308,67 @@ function moveSlide(direction, sliderSelector = '.portfolio-slider') {
         behavior: 'smooth'
     });
 }
+
+function updateSliderButtons(slider) {
+    const container = slider.parentElement;
+    if (!container) return;
+
+    const previousButton = container.querySelector('.nav-btn.prev');
+    const nextButton = container.querySelector('.nav-btn.next');
+    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+    if (previousButton) {
+        previousButton.hidden = slider.scrollLeft <= 1;
+    }
+    if (nextButton) {
+        nextButton.hidden = maxScrollLeft <= 1 || slider.scrollLeft >= maxScrollLeft - 1;
+    }
+}
+
+document.querySelectorAll('.portfolio-slider, .about-carousel-slider').forEach((slider) => {
+    const updateButton = () => updateSliderButtons(slider);
+    slider.addEventListener('scroll', updateButton);
+    window.addEventListener('resize', updateButton);
+    updateButton();
+});
+
+const featuredPortfolioCategory = 'productfotografie'; // Change this to the desired category ID from Portfolio.html
+
+async function loadFeaturedPortfolio() {
+    const response = await fetch('Portfolio.html');
+    if (!response.ok) throw new Error(`Portfolio page returned ${response.status}`);
+
+    const portfolioDocument = new DOMParser().parseFromString(await response.text(), 'text/html');
+    const sourceSlider = portfolioDocument.querySelector(`#portfolio-${featuredPortfolioCategory}`);
+    const sourceTrack = sourceSlider?.querySelector('.portfolio-track');
+    const featuredTrack = document.getElementById('homepage-featured-track');
+    const featuredSlider = document.getElementById('homepage-featured-slider');
+
+    if (!sourceTrack || !featuredTrack || !featuredSlider) {
+        throw new Error(`Portfolio category "${featuredPortfolioCategory}" was not found`);
+    }
+
+    const sourceTitle = sourceSlider.closest('.portfolio-container')?.previousElementSibling;
+    if (sourceTitle?.classList.contains('portfolio-slider-title')) {
+        document.getElementById('featured-portfolio-title').textContent = sourceTitle.textContent;
+    }
+
+    featuredTrack.replaceChildren(...Array.from(sourceTrack.children, (item) => item.cloneNode(true)));
+    featuredSlider.addEventListener('scroll', () => updateSliderButtons(featuredSlider));
+    updateSliderButtons(featuredSlider);
+}
+
+loadFeaturedPortfolio().catch((error) => console.error('Failed to load featured portfolio:', error));
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"> // script voor markdown content inladen. </script>
 
 <script>
-    function addTableLabelsToMobile() {
-      document.querySelectorAll('.tarieven-body table').forEach((table) => {
-        const headers = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
-        if (!headers.length) return;
-
-        table.querySelectorAll('tbody tr').forEach((row) => {
-          Array.from(row.children).forEach((cell, index) => {
-            const label = headers[index] || 'Waarde';
-            cell.setAttribute('data-label', label);
-          });
-        });
-      });
-    }
-
     // script voor markdown content inladen.
 fetch('/content/Tarievenzakelijkenparticulier2026.md')
   .then(res => res.text())
   .then(md => {
     document.getElementById('content1').innerHTML = marked.parse(md);
-    addTableLabelsToMobile();
   })
   .catch(err => {
     console.error('Failed to load markdown:', err);

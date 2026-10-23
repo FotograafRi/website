@@ -18,7 +18,7 @@
 <body class="site-body" id="top">
     <sticky-header class="site-header">
         <div class="logo-container">
-            <a href="#top"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
+            <a href="index.html"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
         </div>
 
         <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-nav" aria-label="Open menu">
@@ -36,16 +36,141 @@
 
         <nav class="site-nav" id="mobile-site-nav">
             <ul class="nav-list">
-                <li><a class="header-nav-item" href="#over-ri">Over Ri</a></li>
-                <li><a class="header-nav-item" href="#portfolio">Portfolio</a></li>
-                <li><a class="header-nav-item" href="#ideeën">Ideeën</a></li>
-                <li><a class="header-nav-item" href="#werkwijze">Werkwijze</a></li>
-                <li><a class="header-nav-item" href="#tarieven">Tarieven</a></li>
+                <li><a class="header-nav-item" href="index.html#over-ri">Over Ri</a></li>
+                <li><a class="header-nav-item" href="index.html#portfolio">Portfolio</a></li>
+                <li><a class="header-nav-item" href="index.html#ideeën">Ideeën</a></li>
+                <li><a class="header-nav-item" href="index.html#werkwijze">Werkwijze</a></li>
+                <li><a class="header-nav-item" href="index.html#tarieven">Tarieven</a></li>
             </ul>
         </nav>
     </sticky-header>
 
 
+
+    <div class="portfolio">
+    <div class="content-box">
+        <h1 id="portfolio">Portfolio</h1>
+        <h2 class="portfolio-slider-title">Sfeerimpressie</h2>
+        <div class="portfolio-container">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-sfeerimpressie')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-sfeerimpressie">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (1 van 12).jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (2 van 12).jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (3 van 12).jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (4 van 12).jpg" alt="Sfeer 4"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (5 van 12).jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (6 van 12).jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (7 van 12).jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (8 van 12).jpg" alt="Sfeer 4"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (9 van 12).jpg" alt="Sfeer 1"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (10 van 12).jpg" alt="Sfeer 2"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (11 van 12).jpg" alt="Sfeer 3"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/sfeerimpressie/Sfeer%20en%20reportage%20fotos/Carrosseriebouw_amsterdam_fotograafri (12 van 12).jpg" alt="Sfeer 4"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-sfeerimpressie')">&#10095;</button>
+        </div>
+
+        <h2 class="portfolio-slider-title">Airsoft</h2>
+        <div class="portfolio-container portfolio-category-slider">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-airsoft')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-airsoft">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/Airsoft/Airsoft1.jpg" alt="Airsoft foto 1" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Airsoft/airsoft2.jpg" alt="Airsoft foto 2" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Airsoft/airsoft3.jpg" alt="Airsoft foto 3" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Airsoft/airsoft4.jpg" alt="Airsoft foto 4" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-airsoft')">&#10095;</button>
+        </div>
+
+        <h2 class="portfolio-slider-title">Huisdieren</h2>
+        <div class="portfolio-container portfolio-category-slider">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-huisdieren')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-huisdieren">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/Huisdieren/Helloween%202025_-2.jpg" alt="Huisdieren foto - Halloween" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Huisdieren/Jesse%20Priscilla%20Yuki%20(5%20of%209).jpg" alt="Huisdieren foto - Jesse, Priscilla en Yuki" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Huisdieren/Milo-3.jpg" alt="Huisdieren foto - Milo" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Huisdieren/Snoop%20kerst-3.jpg" alt="Huisdieren foto - Snoop met kerst" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Huisdieren/Snoop-1.jpg" alt="Huisdieren foto - Snoop" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-huisdieren')">&#10095;</button>
+        </div>
+
+        <h2 class="portfolio-slider-title">Auto</h2>
+        <div class="portfolio-container portfolio-category-slider">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-auto')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-auto">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/auto/a-day-10-3.jpg" alt="Auto foto 1" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/a-day-12-3.jpg" alt="Auto foto 2" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/a-day-4-2.jpg" alt="Auto foto 3" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/a-day-5-3.jpg" alt="Auto foto 4" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/FIAT_500_PN903D-16.jpg" alt="Fiat 500 foto 1" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/FIAT_500_PN903D-17.jpg" alt="Fiat 500 foto 2" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/FIAT_500_PN903D-27.jpg" alt="Fiat 500 foto 3" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/auto/FIAT_500_PN903D-7.jpg" alt="Fiat 500 foto 4" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-auto')">&#10095;</button>
+        </div>
+
+        <h2 class="portfolio-slider-title">Portretten</h2>
+        <div class="portfolio-container portfolio-category-slider">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-portretten')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-portretten">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_groepsfoto_print.jpg" alt="Groepsportret bij Karhof" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-portretten')">&#10095;</button>
+        </div>
+
+        <h2 class="portfolio-slider-title">Motorcross</h2>
+        <div class="portfolio-container portfolio-category-slider">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-motorcross')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-motorcross">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/exposure%20hi_%20pa%20opstapdagen-12.jpg" alt="Motorcross foto 1" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/Opstapdagen%202025-11.jpg" alt="Motorcross foto 2" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/Opstapdagen%202025-15.jpg" alt="Motorcross foto 3" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/Opstapdagen%202025-24.jpg" alt="Motorcross foto 4" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/Opstapdagen%202025-25.jpg" alt="Motorcross foto 5" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/Opstapdagen%202025-40.jpg" alt="Motorcross foto 6" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/Opstapdagen%202025-41.jpg" alt="Motorcross foto 7" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/untitled%20(1%20of%2024).jpg" alt="Motorcross foto 8" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/untitled%20(5%20of%2024).jpg" alt="Motorcross foto 9" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/untitled%20(10%20of%2024).jpg" alt="Motorcross foto 10" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/untitled%20(20%20of%2024).jpg" alt="Motorcross foto 11" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Motorcross/untitled%20(22%20of%2024).jpg" alt="Motorcross foto 12" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-motorcross')">&#10095;</button>
+        </div>
+
+        <h2 class="portfolio-slider-title">Productfotografie</h2>
+        <div class="portfolio-container portfolio-category-slider">
+            <button class="nav-btn prev" onclick="moveSlide(-1, '#portfolio-productfotografie')">&#10094;</button>
+            <div class="portfolio-slider" id="portfolio-productfotografie">
+                <div class="portfolio-track">
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-6.jpg" alt="Productfoto 6" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-9.jpg" alt="Productfoto 9" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-18.jpg" alt="Productfoto 18" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-20.jpg" alt="Productfoto 20" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-22.jpg" alt="Productfoto 22" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-28.jpg" alt="Productfoto 28" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-33.jpg" alt="Productfoto 33" loading="lazy"></div>
+                    <div class="portfolio-item"><img src="images/portfolio/Productfotografie/Karhof_2026_productfoto%C2%B4s-35.jpg" alt="Productfoto 35" loading="lazy"></div>
+                </div>
+            </div>
+            <button class="nav-btn next" onclick="moveSlide(1, '#portfolio-productfotografie')">&#10095;</button>
+        </div>
+    </div>
+</div>
     
 <footer class="site-footer">
   <div class="footer-container">
@@ -53,9 +178,16 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 FotograafRi. Alle rechten voorbehouden. 
+        <p>&copy; 2026 Alle rechten voorbehouden • www.fotograafri.nl • KvK: 98634011 • BTW: NL005344317B28</p>
   </div>
 </footer>
+
+<dialog class="photo-lightbox" id="photo-lightbox" aria-label="Foto op volledige grootte">
+  <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="Vorige foto">&#10094;</button>
+  <button class="photo-lightbox-close" type="button" aria-label="Foto sluiten">&times;</button>
+  <img class="photo-lightbox-image" alt="">
+  <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="Volgende foto">&#10095;</button>
+</dialog>
 
 <script>
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -76,6 +208,53 @@
   }
 </script>
 
+<script>
+  const photoLightbox = document.getElementById('photo-lightbox');
+  const photoLightboxImage = photoLightbox.querySelector('.photo-lightbox-image');
+  const photoLightboxClose = photoLightbox.querySelector('.photo-lightbox-close');
+  const photoLightboxPrevious = photoLightbox.querySelector('.photo-lightbox-prev');
+  const photoLightboxNext = photoLightbox.querySelector('.photo-lightbox-next');
+  let lightboxImages = [];
+  let lightboxIndex = 0;
+
+  document.querySelectorAll('.portfolio-item img').forEach((image) => {
+    image.addEventListener('dblclick', () => {
+      const slider = image.closest('.portfolio-slider');
+      lightboxImages = Array.from(slider.querySelectorAll('.portfolio-item img'));
+      lightboxIndex = lightboxImages.indexOf(image);
+      showLightboxImage();
+      photoLightbox.showModal();
+    });
+  });
+
+  function showLightboxImage() {
+    const image = lightboxImages[lightboxIndex];
+    photoLightboxImage.src = image.currentSrc || image.src;
+    photoLightboxImage.alt = image.alt;
+    const hasMultipleImages = lightboxImages.length > 1;
+    photoLightboxPrevious.hidden = !hasMultipleImages;
+    photoLightboxNext.hidden = !hasMultipleImages;
+  }
+
+  function moveLightboxImage(direction) {
+    if (lightboxImages.length < 2) return;
+    lightboxIndex = (lightboxIndex + direction + lightboxImages.length) % lightboxImages.length;
+    showLightboxImage();
+  }
+
+  photoLightboxPrevious.addEventListener('click', () => moveLightboxImage(-1));
+  photoLightboxNext.addEventListener('click', () => moveLightboxImage(1));
+  photoLightboxClose.addEventListener('click', () => photoLightbox.close());
+  photoLightbox.addEventListener('click', (event) => {
+    if (event.target === photoLightbox) photoLightbox.close();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (!photoLightbox.open) return;
+    if (event.key === 'Escape') photoLightbox.close();
+    if (event.key === 'ArrowLeft') moveLightboxImage(-1);
+    if (event.key === 'ArrowRight') moveLightboxImage(1);
+  });
+</script>
 
 
 
@@ -90,6 +269,29 @@ function moveSlide(direction, sliderSelector = '.portfolio-slider') {
         behavior: 'smooth'
     });
 }
+
+function updatePortfolioButtons(slider) {
+    const container = slider.closest('.portfolio-container');
+    if (!container) return;
+
+    const previousButton = container.querySelector('.nav-btn.prev');
+    const nextButton = container.querySelector('.nav-btn.next');
+    const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+    if (previousButton) {
+        previousButton.hidden = slider.scrollLeft <= 1;
+    }
+    if (nextButton) {
+        nextButton.hidden = maxScrollLeft <= 1 || slider.scrollLeft >= maxScrollLeft - 1;
+    }
+}
+
+document.querySelectorAll('.portfolio-slider').forEach((slider) => {
+    const updateButton = () => updatePortfolioButtons(slider);
+    slider.addEventListener('scroll', updateButton);
+    window.addEventListener('resize', updateButton);
+    updateButton();
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"> // script voor markdown content inladen. </script>
