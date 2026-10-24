@@ -13,12 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/portfolio-lightbox.js" defer></script>
+    <script src="js/slider-controls.js" defer></script>
+    <script src="js/featured-portfolio.js" defer></script>
 </head>
 
 <body class="site-body" id="top">
     <sticky-header class="site-header">
         <div class="logo-container">
-            <a href="#top"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
+            <a href="index.html#top"><img src="images/FotograafRi-logo-PNG-1-2048x475.png" alt="FotograafRi Logo" class="logo"></a>
         </div>
 
         <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-site-nav" aria-label="Open menu">
@@ -106,29 +109,11 @@
 
 <div class="portfolio">
     <div class="content-box">
-        <h1 id="portfolio">Portfolio</h1>
-        <p class="intro-text">Een indruk van mijn recente werk en sfeerimpressie bij carrosseriebouwer en schadehersteller in Amsterdam</p>
+        <h1 id="portfolio"><a href="portfolio.html">Portfolio</a></h1>
+        <p class="intro-text">Recent werk productfotografie</p>
 
-        <div class="portfolio-container">
-            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="portfolio-slider">
-                <div class="portfolio-track">
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (1 van 12).jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (2 van 12).jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (3 van 12).jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (4 van 12).jpg" alt="Sfeer 4"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (5 van 12).jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (6 van 12).jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (7 van 12).jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (8 van 12).jpg" alt="Sfeer 4"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (9 van 12).jpg" alt="Sfeer 1"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (10 van 12).jpg" alt="Sfeer 2"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (11 van 12).jpg" alt="Sfeer 3"></div>
-                    <div class="portfolio-item"><img src="images/portfolio/Carrosseriebouw_amsterdam_fotograafri (12 van 12).jpg" alt="Sfeer 4"></div>
-                </div>
-            </div>
-            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
+        <!-- slider-ID aanpassen voor andere slider op de hoofdpagina . -->
+        <div class="portfolio-featured" data-featured-slider="product-slider" role="status">Portfolio wordt geladen...</div>
     </div>
 </div>
 
@@ -163,38 +148,34 @@
         </p>
 
     <div class="werkwijze-grid">
-            
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Fotografie op Locatie</h3>
-                <p class="leftalign">De fotoshoot vindt plaats op jouw gewenste locatie. Indien nodig neem ik een mini-studio-opstelling mee, bijvoorbeeld voor professionele portretten.</p>
-            </div>
-
-           <div class="werkwijze-item">
-                <h3 class="leftalign">Voorbereiding en overleg</h3>
-                <p class="leftalign">We nemen vooraf de planning door. Tijdens de fotoshoot op locatie overleggen we kort wat jouw specifieke favorieten of wensen zijn. Zo weet ik precies welke beelden voor jou onmisbaar zijn.</p>
-            </div>
-
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Toestemming</h3>
-                <p class="leftalign">Vooraf ontvang je, indien gewenst, een toestemmingsformulier (model release) per e-mail. Dit is belangrijk wanneer we foto's van jouw medewerkers gaan publiceren. </p>
-            </div>
-
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Duur van de Sessie</h3>
-                <p class="leftalign">De maximale duur van een fotosessie is twee uur per dag.</p>
-            </div>
-
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Aanlevering en selectie</h3>
-                <p class="leftalign">Je hoeft na de fotoshoot niet te spitten door honderden foto's. Bij een reportage maak ik zorgvuldig de beste selectie voor je, die ik volledig bewerkt aanlever. Doe je een branding- of portretshoot? Dan nemen we tijdens het fotograferen op locatie even de tijd om je een paar sneakpreviews te laten zien. Zo weten we zeker dat jouw favorieten er sowieso tussen zitten.</p>
-            </div>
-
-            <div class="werkwijze-item">
-                <h3 class="leftalign">Levertijd</h3>
-                <p class="leftalign">Er wordt naar gestreefd de beelden binnen twee weken aan te leveren. De exacte levertijd wordt altijd nogmaals bevestigd op de offerte.</p>
-            </div>
-
+        <div class="werkwijze-item">
+            <h3 class="leftalign">Voorbereiding</h3>
+            <p class="leftalign">Voorafgaand aan de fotoshoot stemmen we de wensen af, zodat we op locatie direct gericht aan de slag kunnen. Zakelijke klanten ontvangen vooraf (indien gewenst) een digitaal toestemmingsformulier (model release) voor medewerkers.</p>
         </div>
+
+        <div class="werkwijze-item">
+            <h3 class="leftalign">Fotografie op Locatie</h3>
+            <p class="leftalign">De fotoshoot vindt plaats op jouw gewenste locatie. Voor (studio)portretten neem ik een mobiele mini-studio-opstelling mee. Sessieduur maximaal 2 uur per dag.</p>
+        </div>
+
+        <div class="werkwijze-item">
+            <h3 class="leftalign">Selectie</h3>
+            <p class="leftalign">Tijdens de fotoshoot, waar mogelijk, kijken we tussendoor op het scherm. Zo weten we zeker dat we de juiste richting te pakken hebben.</p>
+            <p class="leftalign">Na de fotoshoot hoef je verder niets te doen. Ik zoek achteraf de scherpste, mooiste en meest complete serie voor je uit.</p>
+        </div>
+
+        <div class="werkwijze-item">
+            <h3 class="leftalign">Drie Typen Bewerkingen</h3>
+            <p class="leftalign">Sfeer-/reportagefoto’s: Spontane event- of bedrijfssfeer, bewerkt op kleur &amp; licht.</p>
+            <p class="leftalign">Actie- &amp; Impressiefoto's: Gericht opgebouwde beelden (voor huisdieren, airsoft, voertuigen of beeldbank bedrijf), zorgvuldig individueel bewerkt op kleur &amp; licht.</p>
+            <p class="leftalign">Studio Portretten: Uitgelichte portretten inclusief gedetailleerde Photoshop-retouche (huid, licht en verfijning).</p>
+        </div>
+
+        <div class="werkwijze-item">
+            <h3 class="leftalign">Oplevering</h3>
+            <p class="leftalign">Binnen twee weken ontvang je de foto’s in hoge resolutie, helemaal klaar voor gebruik op je website, socials of voor aan de muur. De exacte levertijd wordt altijd nogmaals bevestigd op de offerte.</p>
+        </div>
+    </div>
         
         <hr class="divider-line werkwijze">
     </div>
@@ -222,11 +203,10 @@
 
 <footer class="site-footer">
   <div class="footer-container">
-
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2026 FotograafRi. Alle rechten voorbehouden. 
+    <p>&copy; ALLE RECHTEN VOORBEHOUDEN 2026 • WWW.FOTOGRAAFRI.NL • BTW NL005344317B28 • KVK 98634011</p>
   </div>
 </footer>
 
@@ -271,7 +251,7 @@ function moveSlide(direction, sliderSelector = '.portfolio-slider') {
     function addTableLabelsToMobile() {
       document.querySelectorAll('.tarieven-body table').forEach((table) => {
         const headers = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
-        if (!headers.length) return;
+        if (!headers.some(Boolean)) return;
 
         table.querySelectorAll('tbody tr').forEach((row) => {
           Array.from(row.children).forEach((cell, index) => {
